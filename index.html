@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        .init-hidden {
+            visibility: hidden;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <section class="container">
+            <h1>Product Test</h1>
+        </section>
+
+        <div class="price-container">
+            <h4 class="js-compare-price-display price-compare mr-2 mb-2" id="compare_price_display">R$2.758,62</h4>
+
+            <h4 class="js-price-display text-primary mb-2" id="price_display">R$2.344,82
+            </h4>
+        </div>
+
+        <div class="js-modal-open js-fullscreen-modal-open js-product-payments-container row mb-4">
+            <span class="js-max-installments-container js-max-installments col-12 mb-2 col-md-auto"><span
+                    class="d-table text-inline"><span class="js-max-installments"><span
+                            class="text-accent font-weight-bold"><span
+                                class="js-installment-amount installment-amount">5</span>x
+                            de <span class="js-installment-price installment-price">R$468,96</span>
+                            sem juros</span> </span> </span> </span> <span class="col-12 mb-2"> <span
+                    class="float-left mr-2"> <span class="icon-underline icon-underline-accent"> </span> </span>
+                <span><strong class="text-accent">5% de desconto</strong> pagando com Nuvem
+                    Pago</span> </span> <a class="btn-link btn-link-primary font-small col-12 mt-1"
+                id="btn-installments"> <span class="d-table text-inline">Ver mais
+                    detalhes</span> </a>
+        </div>
+
+        <div class="js-product-variants form-row">
+            <div class="js-product-variants-group col col-md-6">
+                <div class="form-group">Tamanho Piscina até 16 mil litros
+                    <div class="form-floating-icon">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">Quantidade
+            <div class="col-12 col-md-4">
+                <div class="form-group js-quantity form-quantity">
+                    <div class="row m-0 align-items-center">
+                        <div class="form-control-container col">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="js-addtocart js-addtocart-placeholder btn btn-primary btn-transition mb-1 col-12 col-md-7">
+                <div class="d-inline-block"><span
+                        class="js-addtocart-text btn-transition-start transition-container active">Comprar</span>
+                    <span class="js-addtocart-success transition-container btn-transition-success">
+                        Pronto </span>
+
+                    <div class="js-addtocart-adding transition-container btn-transition-progress">
+                        Incluindo...</div>
+                </div>
+            </div>
+
+            <div class="js-added-to-cart-product-message full-width-container mb-2 text-left">
+                Você já adicionou este produto.<a class="js-modal-open js-fullscreen-modal-open btn btn-default pl-1"
+                    href="#">Ver carrinho</a></div>
+        </div>
+
+        <div class="js-modal modal modal- modal-fade transition-slide modal-centered transition-soft js-fullscreen-modal"
+            id="installments-modal">
+            <div class="js-modal-close js-fullscreen-modal-close modal-header">Formas de
+                pagamento</div>
+
+            <div class="modal-body">
+                <div class="js-tab-container">
+                    <ul class="js-tab-group tab-group">
+                        <li class="js-refresh-installment-data js-installments-gw-tab js-tab tab active"
+                            id="method_nuvem_pago"><a class="js-tab-link tab-link" href="#installment_nuvem_pago_">NUVEM
+                                PAGO <span class="label label-accent label-small ml-1"> <strong>5%
+                                        OFF</strong> </span> </a></li>
+                    </ul>
+
+                    <div class="js-tabs-content tab-content">
+                        <div class="js-tab-panel tab-panel active js-gw-tab-pane" id="installment_nuvem_pago_">
+                            <div>
+                                <h6 class="mb-1">Cartões de crédito</h6>
+
+                                <div class="box"><span class="mb-3"><img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span> <span class="mb-3"> <img alt="empty-placeholder.png?1608293360"
+                                            class="card-img card-img-medium lazyloaded"
+                                            src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                    </span>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Parcelas</th>
+                                                <th class="text-right">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">1</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$2.344,82</span>
+                                                    </strong> sem juros</td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.344,82</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">2</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$1.172,41</span>
+                                                    </strong> sem juros</td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.344,82</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">3</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$781,61</span>
+                                                    </strong> sem juros</td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.344,82</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">4</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$586,21</span>
+                                                    </strong> sem juros</td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.344,82</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">5</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$468,96</span>
+                                                    </strong> sem juros</td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.344,82</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">6</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$440,04</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.640,27</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">7</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$379,53</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.656,68</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">8</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$336,48</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.691,85</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">9</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$302,74</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.724,68</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">10</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$274,34</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.743,44</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">11</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$253,03</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.783,30</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong><span class="js-installment-amount">12</span></strong>
+                                                    x</td>
+                                                <td><span>de </span> <strong><span
+                                                            class="js-installment-price">R$235,26</span>
+                                                    </strong></td>
+                                                <td class="js-installment-total-price text-right">
+                                                    R$2.823,16</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h6 class="mb-1">Boleto</h6>
+
+                                <div class="box" id="info-payment-method-boleto">
+                                    <div><span><img alt="" class="card-img card-img-medium lazyloaded"
+                                                src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                        </span></div>
+
+                                    <h4 class="font-weight-normal mb-0"><span>Total:</span>
+                                        <strong class="js-installments-one-payment">R$2.344,82</strong>
+                                    </h4>
+                                </div>
+
+                                <h6 class="mb-1">Pix</h6>
+
+                                <div class="box" id="info-payment-method-pix">
+                                    <div class="mb-3"><span><strong>5% de desconto</strong>
+                                            pagando com Pix</span></div>
+
+                                    <div><span><img alt="" class="card-img card-img-medium lazyloaded"
+                                                src="//d2az8otjr0j19j.cloudfront.net/templates/002/221/668/twig/static/images/empty-placeholder.png?1608293360">
+                                        </span></div>
+
+                                    <h4 class="font-weight-normal mb-0"><span>Total:</span>
+                                        <span class="price-compare">R$2.344,82</span>
+                                        <strong
+                                            class="js-installments-one-payment h3 weight-strong text-primary">R$2.227,58</strong>
+                                    </h4>
+
+                                    <div class="font-small mt-1">O desconto será aplicado
+                                        sobre o custo total da compra (sem frete) ao
+                                        finalizá-la.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="forca-quebra">
+                <article class="init-hidden">
+                    <img class="image-move" alt=""
+                        src="https://cdn.awsli.com.br/1994/1994050/arquivos/Aquecedor-solar-para-piscina_01v2.png">
+                </article>
+                <article class="init-hidden">
+                    <img class="image-move" alt="" src="bonilar.png">
+                </article>
+            </div>
+            <article class="init-hidden">
+                <img class="image-move" alt=""
+                    src="https://cdn.awsli.com.br/1000x5000/1994/1994050/arquivos/Aquecedor-solar-para-piscina_02v2.png">
+            </article>
+        </div>
+        <div class="init-hidden">
+            <p>Kit Aquecedor Solar Piscina 12,0 m2 (2 Placas 5 m)</p>
+
+            <p>&nbsp;</p>
+
+            <p>02 Coletores 500cm x 120cm&nbsp; 6,0m2</p>
+
+            <p>06 Abraçadeira Urja&nbsp;</p>
+
+            <p>02 Conector Urja</p>
+
+            <p>02 CAPS Urja&nbsp;</p>
+
+            <p>01 Válvula Quebra Vácuo Urja&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>*Telhado mínimo para instalação: 5,0 mts de largura x 2,4 mts de comprimento.</p>
+
+            <p>&nbsp;</p>
+
+            <p>GARANTIA DE 5 ANOS NA LINHA SORIA</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;(garantia apenas dos produtos, não nos responsabilizamos pela instalação)</p>
+
+        </div>
+    </div>
+    <script>
+        ScrollReveal({ distance: 'right' });
+        ScrollReveal().reveal('.init-hidden', {
+            delay: 500,
+            duration: 6000,
+            scale: 1,
+            rotate: {
+                x: 0,
+                y: 90,
+                z: 0
+            },
+        });
+    </script>
+</body>
+
+
+</html>

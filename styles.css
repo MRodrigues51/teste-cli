@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.image-move {
+    /* justify-content: center; */
+    max-width: 500px;
+    height: auto;
+}
+
+.forca-quebra {
+    flex-direction: column;
+}
+
+.forca-quebra article {
+    margin-bottom: 5rem;
+}
+
+/* 
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    animation: slide-in 1s ease-in-out;
+    transition: all 0.5s;
+    animation-delay: 100vh;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.init-hidden-off {
+    opacity: 1;
+} */
+
+/* .animated-div {} */
+
+/* @keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+} */
